@@ -5,8 +5,6 @@ admin.autodiscover()
 from .views import documentation
 
 urlpatterns = [
-    'documentation.views',
-
     url(r'^$', documentation, 'index.html'),
     url(r'^(?P<path>.*)$', documentation, name="path"),
 ]
